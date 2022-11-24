@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <title>The Constant</title>
+        <!-- Store meta information, sources and other stuff the user will not see here. -->
+    </head>
+    <body>
+    <div id="mainContainer" style="color:#4F5957; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align: center; font-size: 20px">
+        <p> You have <span id="pointAmount" style="font-size:30px; color: black">x</span> points.</p>
+        <p> Your <b>Constant</b> is <span id="constantAmount" style="font-size:30px; color:blue"> x</span>.</p>
+        <p id="constantSCap"> A Constant Softcap at X Points is dividing your production by X </p>
+        <button id="mainTabButton" class="tabButton"> Main</button>
+        <button id="achTabButton" class="tabButton"> Achievements</button>
+        <div id="mainTab">
+            <div id="mainBuildings" class="mainTab">
+                <button id="increaseConstant"><b>Increase Constant <br></b> Req: <span id="constantCost">x</span> points<br> Resets <b>all</b> buildings and point count!</button>
+                <table class="table" style="width:90%" align="center">
+                <tr style="font-size: 15px" id="genRow">
+                    <td align="left" id="generatorLabel" width="32%" class="rel">
+                        Generators
+                    </td>
+                    <td>
+                        <div id="genAmount">0</div>
+                    </td>
+                    <td>
+                        <div id="genPPS">0.00 Points/sec</div>
+                    </td>
+                    <td align="right" width="10%">
+                        <button id="generatorCount" style="color:rgb(90, 104, 12); height: 25px; font-size: 10px; width: 150px" class="storebtn" align="right">Cost: 10</button>
+                    </td>
+                    <td align="right" width="10%">
+                        <button id="genMax" style="color:black; width:210px; height: 25px; font-size: 10px" class="storebtn" align="right">Max Cost (0): X Points </button>
+                    </td>
+                </tr>
+                <tr style="font-size: 15px;" id="capRow">
+                    <td align="left" id="capacitatorLabel" width="32%" class="rel">
+                        Capacitators
+                    </td>
+                    <td>
+                        <div id="capacitatorAmount">0</div>
+                    </td>
+                    <td>
+                        <div id="capBoost">+0 to Constant softcap</div>
+                    </td>
+                    <td align="right" width="10%">
+                        <button id="capacitatorCount" style="color:rgb(90, 104, 12); height: 25px; font-size: 10px; width: 150px" class="storebtn" align="right">Cost: 10</button>
+                    </td>
+                    <td align="right" width="10%">
+                        <button id="capMax" style="color:black; width:210px; height: 25px; font-size: 10px" class="storebtn" align="right">Cost: 10</button>
+                    </td>
+                </tr>
+                </table>
+            </div>
+        </div>
+        <div id="achTab">
+            <table class="table" align="center" style="margin: auto; display: inline">
+                <tr id="achr1">
+                    <td>
+                    <div id="Generation begins..." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins..." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+
+                </tr>
+                <tr id="achr1">
+                    <td>
+                    <div id="Generation begins..." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                    <td>
+                    <div id="Generation begins.." class="ach achlocked" ach-tooltip="Buy your first Generator."><br></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+        <!-- Store visible information, like buttons, here. -->
+        <script type="text/javascript" src="break_eternity.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="eventSetters.js"></script>
+        <script type="text/javascript" src="constantMilestones.js"></script>
+    </body>
+</html>

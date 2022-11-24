@@ -1,0 +1,72 @@
+.storebtn {
+    color: rgb(0, 0, 0);
+    background: #58242433;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    border: 2px solid #0a0c72;
+    width: 120px;
+    height: 25px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 13px;
+    vertical-align: top;
+}
+.storebtn:hover {
+    background: #2d5932;
+}
+.rel {
+    position: relative;
+}
+table {
+    display: block;
+    clear: left;
+    border-collapse: separate;
+}
+.tabButton {
+    color: rgb(0, 0, 0);
+    background: #46262633;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    border: 5px solid #0a0c72;
+    width: 240px;
+    height: 75px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 25px;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+.achlocked {
+    background: #422929;
+    border: 2px solid #B84B5F;
+    width: 104px;
+    height: 104px;
+    border-radius: 8px;
+    margin: 0px auto;
+    text-align: center;
+    font-family: TypeWriter;
+    color: black;
+    font-size: 70%;
+    user-select: none;
+}
+#increaseConstant {
+    color: rgb(0, 0, 0);
+    background: #0000000a;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    border: 5px solid #0a0c72;
+    width: 50%;
+    height: 30%;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 20px;
+    vertical-align: top;
+    margin-bottom: 100px;
+}
+#constantSCap {
+    color:rgb(192, 151, 27);
+    font-size: 15px
+}
