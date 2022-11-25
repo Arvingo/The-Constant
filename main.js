@@ -7,7 +7,10 @@ var gameData = {
     buildings: {
         generators: new Decimal(0),
         capacitator: new Decimal(0)
-    } 
+    },
+    achTable: [
+        [false, false, false, false, false, false, false, false, false, false, false, false, false],
+      ], 
   }
 function calculateGenPPS() {
     return gameData.buildings.generators.divide(calculateConstantSCapDivisor())
@@ -118,6 +121,8 @@ function load() {
 }
 function gameLoop(diff) {
     gameData.points = gameData.points.plus(calculatePointPerSecond().divide(25))
+    Achievements.checkForAchievements('loop');
+    Achievements.displayAchievements();
     updateText();
 }
 showTab("mainTab")

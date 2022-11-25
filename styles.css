@@ -13,7 +13,7 @@
     vertical-align: top;
 }
 .storebtn:hover {
-    background: #2d5932;
+    background: #4a9d54;
 }
 .rel {
     position: relative;
@@ -38,7 +38,64 @@ table {
     vertical-align: top;
     margin-bottom: 50px;
 }
-.achlocked {
+[ach-tooltip] {
+    position: relative;
+    z-index: 2;
+}
+
+[ach-tooltip]:before,
+[ach-tooltip]:after {
+    visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    pointer-events: none;
+}
+
+[ach-tooltip]:before {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 5px;
+    margin-left: -80px;
+    padding: 7px;
+    width: 160px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #000;
+    background-color: hsla(0, 0%, 5%, 0.9);
+    color: #fff;
+    content: attr(ach-tooltip);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+    transition-duration: .5s;
+}
+[ach-tooltip]:after {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid #000;
+    border-top: 5px solid hsla(0, 0%, 5%, 0.9);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+    transition-duration: .5s;
+}
+
+[ach-tooltip]:hover:before,
+[ach-tooltip]:hover:after {
+    visibility: visible;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+.achievementLocked {
     background: #422929;
     border: 2px solid #B84B5F;
     width: 104px;
@@ -46,8 +103,21 @@ table {
     border-radius: 8px;
     margin: 0px auto;
     text-align: center;
-    font-family: TypeWriter;
-    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';;
+    color: rgb(131, 109, 109);
+    font-size: 70%;
+    user-select: none;
+}
+.achievementUnlocked {
+    background: #44aa19;
+    color:rgb(29, 214, 85);
+    border: 2px solid #1c724d;
+    width: 104px;
+    height: 104px;
+    border-radius: 8px;
+    margin: 0px auto;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';;
     font-size: 70%;
     user-select: none;
 }
